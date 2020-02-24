@@ -53,10 +53,12 @@ header .wrapper .menu .menu_left ul li a {
   color: #5f6368;
   font-size: 0.88em;
   font-weight: 600;
+}
+header .wrapper .menu .menu_left a {
   margin-right: 40px;
   padding-bottom: 3px;
 }
-header .wrapper .menu .menu_left ul li a.active {
+header .wrapper .menu .menu_left a.active {
   color: #3367d6;
   border-bottom: 4px solid #3367d6;
   padding-bottom: 3px;

@@ -34,47 +34,22 @@ header {
       justify-content: space-between;
 
       .menu_left {
-        ul {
-          display: flex;
-          padding: 20px 0 10px;
+        @include link-menu;
 
-          li {
-            list-style: none;
+        a {
+          margin-right: 40px;
+          padding-bottom: 3px;
 
-            a {
-              text-decoration: none;
-              color: $color;
-              font-size: 0.88em;
-              font-weight: 600;
-              margin-right: 40px;
-              padding-bottom: 3px;
-
-              &.active {
-                color: $colorBlue;
-                border-bottom: 4px solid $colorBlue;
-                padding-bottom: 3px;
-              }
-            }
+          &.active {
+            color: $colorBlue;
+            border-bottom: 4px solid $colorBlue;
+            padding-bottom: 3px;
           }
         }
       }
 
       .menu_right {
-        ul {
-          display: flex;
-          padding: 20px 0 10px;
-
-          li {
-            list-style: none;
-
-            a {
-              text-decoration: none;
-              color: $color;
-              font-size: 0.88em;
-              font-weight: 600;
-            }
-          }
-        }
+        @include link-menu;
       }
     }
   }
